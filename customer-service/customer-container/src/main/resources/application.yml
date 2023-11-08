@@ -1,0 +1,25 @@
+server:
+  port: 8081
+spring:
+  jpa:
+    open-in-view: false
+    show-sql: true
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    properties:
+      hibernate:
+        transaction:
+          factory_class: org.hibernate.engine.transaction.internal.jdbc.JdbcTransactionFactory
+          jta.platform: org.hibernate.engine.transaction.internal.jdbc.JdbcTransactionFactory
+        format_sql: true
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres?currentSchema=customer&binaryTransfer=true&reWriteBatchedInserts=true&stringtype=unspecified
+    username: postgres
+    password: admin
+    driver-class-name: org.postgresql.Driver
+customer:
+  api:
+    jwt:
+      secret: 08e6625fb9b5edcbae4f123f11577ca6384a3f76c0c73fa84b9a5b91c70eb1e7
+      expirationTime: 3600000

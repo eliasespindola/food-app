@@ -1,0 +1,28 @@
+version: '3'
+services:
+  postgres:
+    image: postgres:15.4
+    environment:
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "admin"
+    networks:
+      - mynetwork
+    ports:
+      - "5432:5432"
+    volumes:
+      - "./volumes/postgres:/var/lib/postgresql/data"
+
+  pgadmin:
+    image: dpage/pgadmin4:7.8
+    networks:
+      - mynetwork
+    environment:
+      PGADMIN_DEFAULT_EMAIL: "elias@admin.com"
+      PGADMIN_DEFAULT_PASSWORD: "admin"
+    ports:
+      - "6543:80"
+    depends_on:
+      - postgres
+
+networks:
+  mynetwork:
