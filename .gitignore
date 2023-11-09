@@ -106,4 +106,4 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-infrastructure/docker-compose/volumes/postgres
+infrastructure/docker-compose/volumes/
