@@ -47,6 +47,11 @@
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
+				<groupId>br.com.delivery</groupId>
+				<artifactId>restaurant-domain-core</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
 				<groupId>br.com.foodapp</groupId>
 				<artifactId>common-domain</artifactId>
 				<version>${project.version}</version>

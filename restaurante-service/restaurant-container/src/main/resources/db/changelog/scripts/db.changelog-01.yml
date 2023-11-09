@@ -1,0 +1,33 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: elias.espindola
+      context: local or dev or hmg or prod
+      changes:
+        - insert:
+            tableName: ADDRESS_ENTITY
+            columns:
+              - column:
+                  name: ID
+                  value: 1
+              - column:
+                  name: CEP
+                  value: "01000-000"
+              - column:
+                  name: UF
+                  value: "SP"
+              - column:
+                  name: CITY
+                  value: "São Paulo"
+              - column:
+                  name: STREET
+                  value: "Avenida Paulista"
+              - column:
+                  name: NUMBER
+                  value: 1000
+              - column:
+                  name: COMPLEMENT
+                  value: "Apto 123"
+              - column:
+                  name: VICINAGE
+                  value: "Bela Vista"

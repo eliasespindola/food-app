@@ -1,5 +1,6 @@
 package br.com.foodapp.restaurant.dataaccess.entity;
 
+import br.com.foodapp.common.security.valueobject.PaymentCategory;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

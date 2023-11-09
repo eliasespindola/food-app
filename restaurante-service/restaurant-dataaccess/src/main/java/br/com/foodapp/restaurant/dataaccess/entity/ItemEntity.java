@@ -18,6 +18,7 @@ public class ItemEntity {
     private final Long id;
     private final String name;
     private final String description;
+    private final Integer quantity;
     private final BigDecimal price;
     private final String image;
     @ManyToOne(fetch = FetchType.LAZY)

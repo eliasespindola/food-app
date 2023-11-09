@@ -1,0 +1,21 @@
+databaseChangeLog:
+  - changeSet:
+      id: 2
+      author: elias.espindola
+      context: local or dev or hmg or prod
+      changes:
+        - insert:
+            tableName: DELIVERY_ENTITY
+            columns:
+              - column:
+                  name: ID
+                  value: 1
+              - column:
+                  name: AREA
+                  value: "10KM"
+              - column:
+                  name: FEE
+                  value: 5.00
+              - column:
+                  name: TIME
+                  value: "30 min"

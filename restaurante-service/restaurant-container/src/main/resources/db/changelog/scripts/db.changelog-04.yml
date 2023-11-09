@@ -1,0 +1,250 @@
+databaseChangeLog:
+  - changeSet:
+      id: 04
+      author: elias.espindola
+      context: local or dev or hmg or prod
+      changes:
+        - insert:
+            tableName: payments_entity
+            columns:
+              - column:
+                  name: category
+                  value: "CREDIT"
+              - column:
+                  name: name
+                  value: "Diners"
+              - column:
+                  name: restaurant_id
+                  value: "03ad3da7-be83-4bde-81f2-6603b59b3311"
+        - insert:
+            tableName: payments_entity
+            columns:
+              - column:
+                  name: category
+                  value: "CREDIT"
+              - column:
+                  name: name
+                  value: "Mastercard"
+              - column:
+                  name: restaurant_id
+                  value: "03ad3da7-be83-4bde-81f2-6603b59b3311"
+        - insert:
+            tableName: payments_entity
+            columns:
+              - column:
+                  name: category
+                  value: "CREDIT"
+              - column:
+                  name: name
+                  value: "Amex"
+              - column:
+                  name: restaurant_id
+                  value: "03ad3da7-be83-4bde-81f2-6603b59b3311"
+        - insert:
+            tableName: payments_entity
+            columns:
+              - column:
+                  name: category
+                  value: "CREDIT"
+              - column:
+                  name: name
+                  value: "Hipercard"
+              - column:
+                  name: restaurant_id
+                  value: "03ad3da7-be83-4bde-81f2-6603b59b3311"
+        - insert:
+            tableName: payments_entity
+            columns:
+              - column:
+                  name: category
+                  value: "CREDIT"
+              - column:
+                  name: name
+                  value: "Visa"
+              - column:
+                  name: restaurant_id
+                  value: "03ad3da7-be83-4bde-81f2-6603b59b3311"
+        - insert:
+            tableName: payments_entity
+            columns:
+              - column:
+                  name: category
+                  value: "CREDIT"
+              - column:
+                  name: name
+                  value: "Elo"
+              - column:
+                  name: restaurant_id
+                  value: "03ad3da7-be83-4bde-81f2-6603b59b3311"
+
+  - changeSet:
+      id: 05
+      author: elias.espindola
+      context: local or dev or hmg or prod
+      changes:
+        - insert:
+            tableName: payments_entity
+            columns:
+              - column:
+                  name: category
+                  value: "DEBIT"
+              - column:
+                  name: name
+                  value: "Mastercard debit"
+              - column:
+                  name: restaurant_id
+                  value: "03ad3da7-be83-4bde-81f2-6603b59b3311"
+        - insert:
+            tableName: payments_entity
+            columns:
+              - column:
+                  name: category
+                  value: "DEBIT"
+              - column:
+                  name: name
+                  value: "Amex debit"
+              - column:
+                  name: restaurant_id
+                  value: "03ad3da7-be83-4bde-81f2-6603b59b3311"
+        - insert:
+            tableName: payments_entity
+            columns:
+              - column:
+                  name: category
+                  value: "DEBIT"
+              - column:
+                  name: name
+                  value: "Elo debit"
+              - column:
+                  name: restaurant_id
+                  value: "03ad3da7-be83-4bde-81f2-6603b59b3311"
+        - insert:
+            tableName: payments_entity
+            columns:
+              - column:
+                  name: category
+                  value: "DEBIT"
+              - column:
+                  name: name
+                  value: "Visa debit"
+              - column:
+                  name: restaurant_id
+                  value: "03ad3da7-be83-4bde-81f2-6603b59b3311"
+  - changeSet:
+      id: 06
+      author: elias.espindola
+      context: local or dev or hmg or prod
+      changes:
+        - insert:
+            tableName: payments_entity
+            columns:
+              - column:
+                  name: category
+                  value: "FOOD_VOUCHER"
+              - column:
+                  name: name
+                  value: "Ben"
+              - column:
+                  name: restaurant_id
+                  value: "03ad3da7-be83-4bde-81f2-6603b59b3311"
+        - insert:
+            tableName: payments_entity
+            columns:
+              - column:
+                  name: category
+                  value: "FOOD_VOUCHER"
+              - column:
+                  name: name
+                  value: "VR"
+              - column:
+                  name: restaurant_id
+                  value: "03ad3da7-be83-4bde-81f2-6603b59b3311"
+        - insert:
+            tableName: payments_entity
+            columns:
+              - column:
+                  name: category
+                  value: "FOOD_VOUCHER"
+              - column:
+                  name: name
+                  value: "Sodexo"
+              - column:
+                  name: restaurant_id
+                  value: "03ad3da7-be83-4bde-81f2-6603b59b3311"
+        - insert:
+            tableName: payments_entity
+            columns:
+              - column:
+                  name: category
+                  value: "FOOD_VOUCHER"
+              - column:
+                  name: name
+                  value: "Ticket"
+              - column:
+                  name: restaurant_id
+                  value: "03ad3da7-be83-4bde-81f2-6603b59b3311"
+  - changeSet:
+      id: 07
+      author: elias.espindola
+      context: local or dev or hmg or prod
+      changes:
+        - insert:
+            tableName: payments_entity
+            columns:
+              - column:
+                  name: category
+                  value: "OTHERS"
+              - column:
+                  name: name
+                  value: "pix"
+              - column:
+                  name: restaurant_id
+                  value: "03ad3da7-be83-4bde-81f2-6603b59b3311"
+  # Inserts para itens do menu
+  - changeSet:
+      id: 09
+      author: elias.espindola
+      context: local or dev or hmg or prod
+      changes:
+        - insert:
+            tableName: item_entity
+            columns:
+              - column:
+                  name: name
+                  value: "Item 1"
+              - column:
+                  name: description
+                  value: "Descrição do Item 1"
+              - column:
+                  name: quantity
+                  valueNumeric: 10
+              - column:
+                  name: price
+                  valueNumeric: 19.90
+              - column:
+                  name: image
+                  value: "url-da-imagem-1"
+              - column:
+                  name: restaurant_id
+                  value: "03ad3da7-be83-4bde-81f2-6603b59b3311"
+        - insert:
+            tableName: item_entity
+            columns:
+              - column:
+                  name: name
+                  value: "Item 2"
+              - column:
+                  name: description
+                  value: "Descrição do Item 2"
+              - column:
+                  name: quantity
+                  valueNumeric: 10
+              - column:
+                  name: price
+                  valueNumeric: 29.90
+              - column:
+                  name: image
+                  value: "url-da-imagem-2"
+              - column:
+                  name: restaurant_id
+                  value: "03ad3da7-be83-4bde-81f2-6603b59b3311"

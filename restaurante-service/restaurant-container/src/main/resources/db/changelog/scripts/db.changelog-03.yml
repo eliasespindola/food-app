@@ -1,0 +1,57 @@
+databaseChangeLog:
+  - changeSet:
+      id: 03
+      author: elias.espindola
+      context: local or dev or hmg or prod
+      changes:
+        - insert:
+            tableName: RESTAURANT_ENTITY
+            columns:
+              - column:
+                  name: ID
+                  value: "03ad3da7-be83-4bde-81f2-6603b59b3311"
+              - column:
+                  name: CATEGORY
+                  value: "FASTFOOD"
+              - column:
+                  name: LOGO
+                  value: "https://s2.glbimg.com/V0vLGchlI0S7Xll4emaGMIJZSLU=/940x523/e.glbimg.com/og/ed/f/original/2021/01/07/bk-novo_logo.jpg"
+              - column:
+                  name: DESCRIPTION
+                  value: "O Burguer King é uma rede mundial de hamburguerias, fundada em 1954, na Flórida, Estados Unidos. A franquia possui mais de 15 mil lojas em 100 países do mundo inteiro. No Brasil, a marca está desde 2004, desde a inauguração da primeira loja, em São Paulo."
+              - column:
+                  name: ADDRESS_ID
+                  valueNumeric: 1
+              - column:
+                  name: CNPJ
+                  value: "13.574.594/0001-96"
+              - column:
+                  name: DELIVERY_ID
+                  valueNumeric: 1
+              - column:
+                  name: MINIMUM_ORDER
+                  valueNumeric: 10
+              - column:
+                  name: STARS
+                  valueNumeric: 4.5
+
+  - changeSet:
+      id: 04
+      author: elias.espindola
+      context: local or dev or hmg or prod
+      changes:
+        - insert:
+            tableName: REVIEW_ENTITY
+            columns:
+              - column:
+                  name: STARS
+                  valueNumeric: 4.5
+              - column:
+                  name: COMMENT
+                  value: "Ótimo restaurante com excelente serviço."
+              - column:
+                  name: CUSTOMER_ID
+                  value: "cc8de6cf-c589-4489-aa19-6da1661c9ba8"
+              - column:
+                  name: RESTAURANT_ID
+                  value: "03ad3da7-be83-4bde-81f2-6603b59b3311"
